@@ -1,5 +1,6 @@
 import React from "react";
 import ProductsCard from "./ProductsCard";
+import '../assets/scss/products.scss';
 
 const Products = ({ products }) => {
   return (
@@ -17,7 +18,7 @@ const Products = ({ products }) => {
         </p>
       </div>
       {/* =================== Products Start here ================= */}
-      <div className="max-w-screen-xl mx-auto grid grid-cols-4 gap-10 py-10">
+      <div className="product-container max-w-screen-xl mx-auto grid grid-cols-4 gap-10 py-10">
         {products.map((item) => (
           <ProductsCard key={item._id} product={item} />
         ))}

@@ -1,3 +1,5 @@
+//jannymicher
+
 import React from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { HiOutlineArrowLeft } from "react-icons/hi";
@@ -10,20 +12,21 @@ import {
   resetCart,
 } from "../redux/bazarSlice";
 import { ToastContainer, toast } from "react-toastify";
+import '../assets/scss/products.scss';
 
 const CartItem = () => {
   const dispatch = useDispatch();
   const productData = useSelector((state) => state.bazar.productData);
   return (
-    <div className="w-2/3 pr-10">
+    <div className="item w-2/3 pr-10">
       <div className="w-full">
-        <h2 className="font-titleFont text-2xl">shopping cart</h2>
-        <div>
+        <h2 className="font-titleFont text-2xl text-center sm:text-left">shopping cart</h2>
+        <div className="itemChild">
           <div>
             {productData.map((item) => (
               <div
                 key={item._id}
-                className="flex items-center justify-between gap-6 mt-6"
+                className="cardPanier flex items-center justify-between gap-6 mt-6"
               >
                 <div className="flex items-center gap-2">
                   <MdOutlineClose
@@ -100,7 +103,7 @@ const CartItem = () => {
           <span>
             <HiOutlineArrowLeft />
           </span>
-          go shopping
+          Retour
         </button>
       </Link>
       <ToastContainer
@@ -113,7 +116,7 @@ const CartItem = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="light"
       />
     </div>
   );
