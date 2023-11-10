@@ -6,7 +6,6 @@
     width: $maxWidth;
     margin: 0 auto;
     height: 90vh;
-    background-color: rgb(219, 219, 219);
     overflow: hidden;
 
     .text {
@@ -63,7 +62,24 @@
                 aspect-ratio: 1;
                 margin: 0 auto;
                 border-radius: 50%;
-                background-color: $white;
+                background: linear-gradient(to bottom,
+                        hsl(0, 0%, 100%) 0%,
+                        hsla(0, 0%, 99.39%, 0.988) 8.1%,
+                        hsla(0, 0%, 97.67%, 0.953) 15.5%,
+                        hsla(0, 0%, 94.95%, 0.899) 22.5%,
+                        hsla(0, 0%, 91.32%, 0.83) 29%,
+                        hsla(0, 0%, 86.86%, 0.749) 35.3%,
+                        hsla(0, 0%, 81.65%, 0.659) 41.2%,
+                        hsla(0, 0%, 75.75%, 0.563) 47.1%,
+                        hsla(0, 0%, 69.22%, 0.467) 52.9%,
+                        hsla(0, 0%, 62.15%, 0.371) 58.8%,
+                        hsla(0, 0%, 54.63%, 0.281) 64.7%,
+                        hsla(0, 0%, 46.8%, 0.2) 71%,
+                        hsla(0, 0%, 38.91%, 0.131) 77.5%,
+                        hsla(0, 0%, 31.45%, 0.077) 84.5%,
+                        hsla(0, 0%, 25.49%, 0.042) 91.9%,
+                        hsla(0, 0%, 23%, 0.03) 100%);
+                ;
                 z-index: 1;
             }
 

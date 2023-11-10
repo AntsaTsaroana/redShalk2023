@@ -86,7 +86,7 @@ const Header = () => {
   return (
     <>
       <div className="navigation w-full h-20 bg-white font-titleFont border-b-[1px] border-b-gray-800 sticky top-0 z-50">
-        <div className="max-w-screen-xl h-full flex items-center justify-between">
+        <div className="max-w-screen-xl h-full flex items-center justify-between ml-auto mr-auto">
           <Link to="/">
             <div>
               <img className="w-28" src={logoDark} alt="logoDark" />

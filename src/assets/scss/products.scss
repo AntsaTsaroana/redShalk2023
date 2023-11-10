@@ -1,5 +1,8 @@
 @import './reset.scss';
 
+.product-container {
+    padding: 25px 50px;
+}
 
 // RESPONSIVE
 @media screen and (max-width:640px) {

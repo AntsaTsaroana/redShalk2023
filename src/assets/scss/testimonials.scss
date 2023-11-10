@@ -2,6 +2,9 @@
 
 .testimonials {
     margin-inline: 5rem;
+    margin: 0 auto;
+    padding: 25px 50px;
+
     .left {
         .avatar {
             // bac
@@ -13,33 +16,35 @@
             outline-offset: 10px;
         }
     }
+
     .right {
         .title {
             position: relative;
             text-transform: uppercase;
+            font-family: 'Soria';
+
             h2 {
                 font-size: 2rem;
                 line-height: 1.2;
+                letter-spacing: 5px;
             }
+
             span {
-                position: absolute;
-                // transform: translate(-50%, -50%);
-                opacity: .07;
-                bottom: -3.3rem;
-                left: -1rem;
-                // left: 50%;
-                font-size: 8rem;
+                @include span;
             }
         }
+
         // .subtitle {
         //     margin-bottom: 1rem;
         // }
         .content {
             margin-block: 1.7rem;
+
             .user {
                 display: flex;
                 gap: 1rem;
                 margin-block: 1rem;
+
                 .username {
                     font-weight: bolder;
                     text-transform: uppercase;
@@ -51,9 +56,10 @@
 
 @media screen and (max-width: 780px) {
     .left {
-      display: none;
+        display: none;
     }
+
     .right {
         margin-left: 0 !important;
     }
-  }
+}
