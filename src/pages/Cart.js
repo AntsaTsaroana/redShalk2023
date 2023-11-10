@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
+import '../assets/scss/products.scss';
 
 const Cart = () => {
   const productData = useSelector((state) => state.bazar.productData);
@@ -43,11 +44,11 @@ const Cart = () => {
         alt="cartImg"
       />
       {productData.length > 0 ? (
-        <div className="max-w-screen-xl mx-auto py-20 flex">
+        <div className="cartItem max-w-screen-xl mx-auto py-20 flex">
           <CartItem />
-          <div className="w-1/3 bg-[#fafafa] py-6 px-4">
-            <div className=" flex flex-col gap-6 border-b-[1px] border-b-gray-400 pb-6">
-              <h2 className="text-2xl font-medium ">cart totals</h2>
+          <div className="item w-1/3 bg-[#fafafa] py-6 px-4 mt-6">
+            <div className="flex flex-col gap-6 border-b-[1px] border-b-gray-400 pb-6">
+              <h2 className="text-2xl font-medium text-center sm:text-left">cart totals</h2>
               <p className="flex items-center gap-4 text-base">
                 Subtotal{" "}
                 <span className="font-titleFont font-bold text-lg">

@@ -87,7 +87,7 @@ const ProductsCard = ({ product }) => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="light"
       />
     </div>
   );

@@ -4,6 +4,7 @@ import { MdOutlineStar } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/bazarSlice";
 import { ToastContainer, toast } from "react-toastify";
+import '../assets/scss/products.scss';
 
 const Product = () => {
   const dispatch = useDispatch();
@@ -16,8 +17,8 @@ const Product = () => {
 
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto my-10 flex gap-10">
-        <div className="w-2/5 relative">
+      <div className="produitDiv max-w-screen-xl mx-auto my-10 flex gap-10">
+        <div className=" divImg w-2/5 relative">
           <img
             className="w-full h-[550px] object-cover"
             src={details.image}
@@ -54,9 +55,9 @@ const Product = () => {
             <p className="text-xs text-gray-500">(1 Customer review)</p>
           </div>
           <p className="text-base text-gray-500 -mt-3">{details.description}</p>
-          <div className="flex gap-4">
+          <div className="divPanier flex gap-4">
             <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border p-3">
-              <p className="text-sm">Quantity</p>
+              <p className="text-sm">Quantité</p>
               <div className="flex items-center gap-4 text-sm font-semibold">
                 <button
                   onClick={() =>
@@ -90,7 +91,7 @@ const Product = () => {
               }
               className="bg-black text-white py-3 px-6 active:bg-gray-800"
             >
-              add to cart
+              Ajouter au panier
             </button>
           </div>
           <p className="text-base text-gray-500">
