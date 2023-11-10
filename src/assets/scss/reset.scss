@@ -1,7 +1,10 @@
 // VARIABLE
-$white : #fff;
-$black : rgb(8, 8, 8);
-$maxWidth : min(100%, 1366px);
+$white : #F5F7F8;
+$black : #000;
+$yellow: #F4CE14;
+$darkTeal: #495E57;
+$darkGrey: #585858;
+$lightGrey: hsl(0, 0%, 80%);
 
 // RESPONSIVE BREAKPOINT :
 // sm	640px	@media (min-width: 640px) { ... }
@@ -15,3 +18,5 @@ $maxWidth : min(100%, 1366px);
     font-family: 'Soria';
     src: url('../font/Soria-font.ttf');
 }
+
+// maxwidth: 1366px
