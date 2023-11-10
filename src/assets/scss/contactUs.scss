@@ -1,0 +1,10 @@
+@import './reset.scss';
+
+// CONTACT
+.contactUs {
+    @include padding-section;
+    width: $maxWidth;
+    height: 85vh;
+    margin: 0 auto;
+    background-color: red;
+}

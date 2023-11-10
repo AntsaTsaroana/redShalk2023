@@ -28,3 +28,7 @@ $maxWidth: min(100%, 1366px);
     left: -1rem;
     font-size: 7rem;
 }
+
+@mixin padding-section {
+    padding: 50px 25px 0;
+}

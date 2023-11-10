@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "./components/Banner";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/ContactUs";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -16,6 +17,7 @@ const Home = () => {
       <Banner />
       <Products products={products} />
       <Testimonials/>
+      <Contact />
     </div>
   );
 };
