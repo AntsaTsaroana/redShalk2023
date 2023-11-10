@@ -1,0 +1,59 @@
+@import './reset.scss';
+
+.testimonials {
+    margin-inline: 5rem;
+    .left {
+        .avatar {
+            // bac
+            width: 15rem;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 13px solid $lightGrey;
+            outline: 1px solid $lightGrey;
+            outline-offset: 10px;
+        }
+    }
+    .right {
+        .title {
+            position: relative;
+            text-transform: uppercase;
+            h2 {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            span {
+                position: absolute;
+                // transform: translate(-50%, -50%);
+                opacity: .07;
+                bottom: -3.3rem;
+                left: -1rem;
+                // left: 50%;
+                font-size: 8rem;
+            }
+        }
+        // .subtitle {
+        //     margin-bottom: 1rem;
+        // }
+        .content {
+            margin-block: 1.7rem;
+            .user {
+                display: flex;
+                gap: 1rem;
+                margin-block: 1rem;
+                .username {
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .left {
+      display: none;
+    }
+    .right {
+        margin-left: 0 !important;
+    }
+  }
