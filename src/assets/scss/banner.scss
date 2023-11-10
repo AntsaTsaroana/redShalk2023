@@ -1,0 +1,97 @@
+@import './reset.scss';
+
+// BANNER
+.banner {
+    display: flex;
+    width: $maxWidth;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: rgb(219, 219, 219);
+    overflow: hidden;
+
+    .text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 0 0 135px;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        color: $black;
+
+        h1 {
+            position: relative;
+            font-family: 'Soria';
+            font-size: 60px;
+            line-height: 65px;
+            z-index: 3;
+        }
+
+        p {
+            position: relative;
+            font-size: 13px;
+            z-index: 3;
+        }
+
+        button {
+            position: relative;
+            margin-top: 25px;
+            padding: 10px 15px;
+            font-size: 12px;
+            letter-spacing: 3px;
+            border: 1px solid grey;
+            z-index: 3;
+        }
+    }
+
+    .imgBanner {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+        .img {
+            width: 326px;
+            height: 100%;
+            margin: 0 50px;
+
+            .circle {
+                position: absolute;
+                top: 55px;
+                left: 18px;
+                width: 440px;
+                aspect-ratio: 1;
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: $white;
+                z-index: 1;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+            }
+
+        }
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width:975px) {
+    .banner {
+
+        .text {
+            position: absolute;
+            top: 35px;
+            width: 80%;
+            padding: 0 0 0 20px;
+        }
+
+        .imgBanner {
+            transform: translateX(100%);
+        }
+    }
+}
