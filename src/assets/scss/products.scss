@@ -4,6 +4,10 @@
     padding: 25px 50px;
 }
 
+.heading {
+    @include heading;
+}
+
 // RESPONSIVE
 @media screen and (max-width:640px) {
     .product-container {

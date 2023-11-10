@@ -4,7 +4,32 @@
 .contactUs {
     @include padding-section;
     width: $maxWidth;
-    height: 85vh;
     margin: 0 auto;
-    background-color: red;
+    overflow: hidden;
+
+    .heading {
+       @include heading;
+    }
+
+    form {
+
+        input,
+        textarea {
+            border: 1px solid rgba(0, 0, 0, 0.753);
+        }
+
+        label {
+            margin-top: 9px;
+            padding: 0 5px;
+            background: #ffffff;
+            font-size: 12px;
+            color: $black;
+        }
+
+        input[type=submit] {
+            @include button;
+            background: $black;
+            color: $white;
+        }
+    }
 }

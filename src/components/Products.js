@@ -4,12 +4,13 @@ import '../assets/scss/products.scss';
 
 const Products = ({ products }) => {
   return (
-    <div className="py-10">
+    <div className="py-10" style={{ marginTop: '50px' }}>
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-2xl bg-black text-white py-2 w-80 text-center">
-          shopping everyday
-        </h1>
-        <span className="w-20 h-[3px] bg-black"></span>
+        <span class="heading">
+          <h1>PRODUITS</h1>
+          <h2>PRODUITS</h2>
+        </span>
+        <span className="w-20 h-[3px] bg-black relative" style={{ position: 'relative', top: '-50px' }}></span>
         <p className="max-w-[700px] text-gray-600 text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
           quos fugit inventore, cumque quae corporis ratione tenetur eos

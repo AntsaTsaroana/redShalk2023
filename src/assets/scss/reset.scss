@@ -6,6 +6,7 @@ $darkTeal: #495E57;
 $darkGrey: #585858;
 $lightGrey: hsl(0, 0%, 80%);
 $maxWidth: min(100%, 1366px);
+$fontH2: clamp(1.5rem, 1.2113rem + 0.9238vw, 2rem);
 
 // RESPONSIVE BREAKPOINT :
 // sm	640px	@media (min-width: 640px) { ... }
@@ -25,10 +26,44 @@ $maxWidth: min(100%, 1366px);
     position: absolute;
     opacity: 0.05;
     bottom: -3.6rem;
-    left: -1rem;
+    left: -9.3rem;
     font-size: 7rem;
 }
 
 @mixin padding-section {
     padding: 50px 25px 0;
+}
+
+@mixin button {
+    position: relative;
+    margin-top: 25px;
+    padding: 10px 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    border: 1px solid grey;
+    z-index: 3;
+}
+
+@mixin heading {
+    position: relative;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    font-family: 'soria';
+
+    h1 {
+        color: rgb(231 231 231 / 57%);
+        font-size: clamp(4rem, 2.2679rem + 5.5427vw, 7rem);
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        font-size: $fontH2;
+        font-weight: bolder;
+        letter-spacing: 5px;
+        transform: translate(-50%, -50%);
+    }
 }

@@ -34,13 +34,7 @@
         }
 
         button {
-            position: relative;
-            margin-top: 25px;
-            padding: 10px 15px;
-            font-size: 12px;
-            letter-spacing: 3px;
-            border: 1px solid grey;
-            z-index: 3;
+            @include button;
         }
     }
 
@@ -57,8 +51,8 @@
             .circle {
                 position: absolute;
                 top: 55px;
-                left: 18px;
-                width: 440px;
+                left: -15px;
+                width: 500px;
                 aspect-ratio: 1;
                 margin: 0 auto;
                 border-radius: 50%;

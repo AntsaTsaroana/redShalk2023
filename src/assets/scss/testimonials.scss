@@ -24,13 +24,15 @@
             font-family: 'Soria';
 
             h2 {
-                font-size: 2rem;
+                font-size: $fontH2;
                 line-height: 1.2;
                 letter-spacing: 5px;
+                font-weight: bolder;
             }
 
             span {
                 @include span;
+                left: -1rem;
             }
         }
 
