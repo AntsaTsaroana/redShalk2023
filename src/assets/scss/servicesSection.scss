@@ -1,0 +1,41 @@
+.servicesSection {
+    margin-inline: 4rem;
+    padding-block: 2rem;
+    .texts {
+        h2 {
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-family: 'Soria';
+            font-size: 2rem;
+        }
+        p {
+            width: 60%;
+            margin: 1rem auto;
+        }
+    }
+    .services {
+        margin-top: 4rem;
+        gap: 2rem;
+        justify-content: space-evenly;
+        .service {
+            max-width: 20rem;
+            .logo {
+                padding: 1rem;
+                svg {
+                    margin: auto;
+                }
+            }
+            .title {
+                font-weight: bolder;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 720px) {
+    .servicesSection {
+        .services {
+            flex-wrap: wrap;
+        }
+    }
+  }
