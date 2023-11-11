@@ -4,10 +4,8 @@ import '../assets/scss/contactUs.scss';
 const ContactUs = () => {
     return (
         <div className='contactUs'>
-            <span class="heading">
-                <h1>CONTACTEZ-NOUS</h1>
-                <h2>CONTACTEZ-NOUS</h2>
-            </span>
+            
+            
             <div class="container my-0 mx-auto md:px-6">
                 <section class="mb-32 text-center">
                     <div class="py-12 md:px-12">
