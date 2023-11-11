@@ -11,7 +11,7 @@ const AboutMe = () => {
         <AboutMeDescriptions/>
         <div className="works" id='works'>
           { Works.map((work) => (
-            <Work key={work.title} title={work.title} subtitle={work.subtitle} image={work.image} />
+            <Work key={work.title} title={work.title} subtitle={work.subtitle} id={work.id} />
           )) }
         </div>
         {/* Some Text

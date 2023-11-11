@@ -7,9 +7,9 @@ const AdviceBanner = () => {
     <div className='adviceBanner'>
         <div className="image"></div>
         <div className="texts">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, animi.</p>
+            <p>Mettez en valeur votre personnalité grâce à nos suggestions de mode.</p>
             <a href="#01">
-                Get started
+              Commencer
                 <AiOutlineArrowRight/>
             </a>
         </div>

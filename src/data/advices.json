@@ -1,32 +1,44 @@
 [
     {
         "no": "01",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "A",
+        "title": "Morphologie en \"A\" (Hanche plus large que les épaules)",
+        "description": "Mettez l'accent sur le haut du corps : des hauts ajustés, des épaules dénudées, des décolletés en V. Évitez les jupes ou pantalons trop moulants au niveau des hanches.",
+        "image": 1
     },
     {
         "no": "02",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "V",
+        "title": "Morphologie en \"V\" (Épaules plus larges que les hanches)",
+        "description": "Équilibrez en mettant l'accent sur les hanches : des jupes évasées, des pantalons larges, des détails au niveau des hanches.        Évitez les hauts trop ajustés ou les épaulettes prononcées.",
+        "image": 2
     },
     {
         "no": "03",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "H",
+        "title": "Morphologie en \"H\" (Épaules et hanches alignées)",
+        "description": "Créez des courbes : mettez des ceintures, optez pour des robes ajustées à la taille, privilégiez les décolletés en V. Évitez les vêtements trop droits qui pourraient accentuer la silhouette carrée.",
+        "image": 3
     },
     {
         "no": "04",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "X",
+        "title": "Morphologie en \"X\" (Épaules et hanches alignées avec une taille marquée)",
+        "description": "Mettez en valeur votre taille : des ceintures, des robes cintrées, des tenues près du corps pour souligner vos formes.Évitez les vêtements trop amples qui pourraient cacher votre silhouette.",
+        "image": 4
     },
     {
         "no": "05",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "O",
+        "title": "Morphologie en \"O\" (Silhouette ronde avec peu de taille marquée)",
+        "description": "Optez pour des tenues fluides : robes évasées, tuniques, tissus fluides pour plus de confort. Évitez les vêtements trop moulants qui pourraient mettre l'accent sur les rondeurs.",
+        "image": 5
     },
     {
         "no": "06",
-        "title": "Lorem ipsum dolor sit amet.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laboriosam accusamus fugit assumenda dicta deserunt iure quam iusto itaque cum?"
+        "type": "8",
+        "title": "Morphologie en \"8\" ( épaules et des hanches de taille similaire, avec une taille marquée )",
+        "description": "Les vêtements cintrés ou ceinturés mettent en valeur la taille fine. Les robes ajustées à la taille sont également flatteuses. Évitez les vêtements trop amples qui pourraient cacher vos courbes naturelles",
+        "image": 6
     }
 ]

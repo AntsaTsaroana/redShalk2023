@@ -13,10 +13,7 @@ const Products = ({ products, show }) => {
         </span>
         <span className="w-20 h-[3px] bg-black relative" style={{ position: 'relative', top: '-50px' }}></span>
         <p className="max-w-[700px] text-gray-600 text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
-          quos fugit inventore, cumque quae corporis ratione tenetur eos
-          voluptates neque magnam soluta aperiam omnis perspiciatis reiciendis
-          asperiores repudiandae assumenda quidem.
+        Découvrez nos créations exclusives, conçues individuellement pour vous. Chaque modèle est une œuvre d'art personnalisée, mettant en valeur votre unicité et votre élégance.
         </p>
       </div>
       {/* =================== Products Start here ================= */}

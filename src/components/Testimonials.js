@@ -11,12 +11,12 @@ const Testimonials = () => {
         </div>
         <div className="right">
             <div className="title">
-                <h2>Reviews</h2>
-                <span>Reviews</span>
+                <h2>Témoignages</h2>
+                <span>Témoignages</span>
             </div>
-            <p className="subtitle">Lorem ipsum dolor sit amet.</p>
+            <p className="subtitle">Leurs mots comptent pour nous.</p>
             <div className="content">
-                <p className="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus cumque quas hic voluptates consectetur nostrum perferendis assumenda odio sit tempora.</p>
+                <p className="message">Je suis tombé amoureux de chaque pièce créée par le styliste. Les vêtements sont uniques, confortables et reflètent parfaitement mon style. Une expérience inoubliable!</p>
                 <div className="user flex items-center">
                     <span className="username">John Doe</span>
                     <div className="stars flex">

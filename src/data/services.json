@@ -2,16 +2,16 @@
     {
         "logo": 1,
         "title": "Couture",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Des vêtements sur mesure conçus exclusivement pour vous."
     },
     {
         "logo": 2,
         "title": "Vente",
-        "description": "Quo est voluptatibus distinctio id esse quis Lorem ipsum dolor sit amet."
+        "description": "Vente de vêtements personnalisés, pour une élégance qui vous ressemble."
     },
     {
         "logo": 3,
         "title": "Conseil",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Explorez nos conseils en habillement pour une apparence impeccable."
     }
 ]
