@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import {
   createBrowserRouter,
   Outlet,
@@ -6,8 +6,9 @@ import {
   ScrollRestoration,
 } from "react-router-dom";
 import { productsData } from "./api/Api";
-import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Product from "./components/Product";
 import AllProduits from "./pages/AllProduits";
 import Home from "./Home";
@@ -17,8 +18,10 @@ import Login from "./pages/Login";
 import LoginUser from "./pages/LoginUser";
 import DashboardAdmin from "./pages/DashboardAdmin";
 import ModifProduit from "./pages/ModifProduit";
+import AllCommande from "./pages/AllCommande";
 import Advices from "./pages/Advices";
 import AboutMe from "./pages/AboutMe";
+
 
 const Layout = () => {
   return (
@@ -75,6 +78,10 @@ const router = createBrowserRouter([
         element: <ModifProduit />,
       },
       {
+        path: "/allCommande",
+        element: <AllCommande />,
+      },
+      {
         path: "/advices",
         element: <Advices />,
       },
@@ -87,11 +94,29 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+
+    // Simule le chargement
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+  }, []);
+
   return (
-    <div className="font-bodyFont">
-      <RouterProvider router={router} />
-    </div>
-  );
+    <>
+      {isLoading ? <Preloader />
+        :
+        <div className="font-bodyFont">
+          <RouterProvider router={router} />
+        </div>}
+    </>
+
+
+  )
 }
 
 export default App;
+
