@@ -1,16 +1,27 @@
 import React from 'react'
 import '../assets/scss/advice.scss'
+import image1 from '../assets/img/models/02.webp'
+import image2 from '../assets/img/models/03.webp'
+import image3 from '../assets/img/models/04.webp'
+import image4 from '../assets/img/models/05.webp'
+import image5 from '../assets/img/models/06.webp'
+import image6 from '../assets/img/models/07.webp'
 
 const Advice = (props) => {
 
     const no = props.no
+    const type = props.type
     const title = props.title
     const description = props.description
 
   return (
     <div className='advice' id={no}>
-        <div className="image">
-            <h1 className="number">{no}</h1>
+        <div className="image" style={{
+          backgroundImage: no === '01' ? `url(${image1})` : no === '02' ? `url(${image2})` : no === '03' ? `url(${image3})` : no === '04' ? `url(${image4})` : no === '05' ? `url(${image5})` : `url(${image6})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }} >
+            <h1 className="number">{type}</h1>
         </div>
         <div className="texts">
             <h1 className="title">{title}</h1>

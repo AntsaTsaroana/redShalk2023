@@ -8,7 +8,7 @@ const Advices = () => {
     <>
         <AdviceBanner/>
         {
-            advices.map((advice) => (<Advice key={advice.no} no={advice.no} title={advice.title} description={advice.description} />))
+            advices.map((advice) => (<Advice key={advice.no} no={advice.no} title={advice.title} description={advice.description} image={advice.image} type={advice.type} />))
         }
     </>
   )

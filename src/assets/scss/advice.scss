@@ -8,6 +8,9 @@
     // background: tomato;
     .image {
         background: $lightGrey;
+        background-image: url(../img/models/group.jpg);
+        background-position: center;
+        background-size: cover;
         width: 70%;
         height: 80%;
         position: absolute;
