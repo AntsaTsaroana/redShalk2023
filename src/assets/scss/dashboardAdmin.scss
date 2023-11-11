@@ -1,0 +1,106 @@
+@import './reset.scss';
+
+.dashAdmin {
+    margin-bottom: 50px;
+}
+
+.btnGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    button {
+        @include button;
+    }
+}
+
+.ajoutBien {
+    h2 {
+        width: max-content;
+        padding: 25px 0;
+        margin: 0 auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input,
+        select {
+            outline: none;
+            border: 1px solid rgb(87, 87, 87);
+            padding: 15px;
+            width: 300px;
+            margin: 0 auto;
+
+            &:focus {
+                outline: 5px solid #f4cf146e;
+            }
+        }
+
+        input[type=submit] {
+            background: $black;
+            color: $white;
+            transition: 0.5s;
+    
+            &:hover {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+.listBien {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+        padding: 25px 0;
+    }
+
+    .table-bien {
+        overflow: auto;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .table-bien table {
+        border: 1px solid #000000c2;
+        height: 100%;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 1px;
+        text-align: center;
+
+        .update {
+            padding: 3px 8px;
+            border: 1px solid #0000ff73;
+            color: #0000ff73;
+            margin-right: 5px;
+        }
+
+        .delete {
+            padding: 3px 8px;
+            border: 1px solid #ff000073;
+            color: #ff000073;
+        }
+    }
+
+    .table-bien th {
+        border: 1px solid #DEDEDF;
+        background-color: #0000000c;
+        color: #000000;
+        padding: 15px 20px;
+    }
+
+    .table-bien td {
+        border: 1px solid #DEDEDF;
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 15px 20px;
+    }
+}

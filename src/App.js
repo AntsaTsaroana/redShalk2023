@@ -14,6 +14,8 @@ import Home from "./Home";
 import Cart from "./pages/Cart";
 import Commande from "./pages/Commande";
 import Login from "./pages/Login";
+import LoginUser from "./pages/LoginUser";
+import DashboardAdmin from "./pages/DashboardAdmin";
 
 const Layout = () => {
   return (
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/loginUser",
+        element: <LoginUser />,
+      },
+      {
+        path: "/dashboard",
+        element: <DashboardAdmin />,
       },
     ],
   },
