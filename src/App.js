@@ -15,6 +15,7 @@ import Cart from "./pages/Cart";
 import Commande from "./pages/Commande";
 import Login from "./pages/Login";
 import Advices from "./pages/Advices";
+import AboutMe from "./pages/AboutMe";
 
 const Layout = () => {
   return (
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
       {
         path: "/advices",
         element: <Advices />,
+      },
+      {
+        path: "/aboutMe",
+        element: <AboutMe />,
       },
     ],
   },
