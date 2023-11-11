@@ -20,11 +20,12 @@ const Products = ({ products }) => {
       </div>
       {/* =================== Products Start here ================= */}
       <div className="product-container p-25-50 max-w-screen-xl mx-auto grid grid-cols-4 gap-10">
-        {products.map((item) => (
+        {products.slice(0, 4).map((item) => (
           <ProductsCard key={item._id} product={item} />
         ))}
       </div>
       {/* =================== Products End here =================== */}
+      <button className="button">Voir plus</button>
     </div>
   );
 };

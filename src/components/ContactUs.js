@@ -8,7 +8,7 @@ const ContactUs = () => {
                 <h1>CONTACTEZ-NOUS</h1>
                 <h2>CONTACTEZ-NOUS</h2>
             </span>
-            <div class="container my-24 mx-auto md:px-6">
+            <div class="container my-0 mx-auto md:px-6">
                 <section class="mb-32 text-center">
                     <div class="py-12 md:px-12">
                         <div class="container mx-auto xl:px-32">
@@ -62,7 +62,7 @@ const ContactUs = () => {
                                     <div
                                         class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
                                         <iframe
-                                            src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Villa MAHI Lot II U 89 Bis E, Cité Planton, Antananarivo 101&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                             class="absolute left-0 top-0 h-full w-full rounded-lg"
                                             frameborder="0"
                                             allowfullscreen></iframe>

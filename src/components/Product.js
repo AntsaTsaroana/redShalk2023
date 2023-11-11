@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { MdOutlineStar } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/bazarSlice";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Flip } from "react-toastify";
 import '../assets/scss/products.scss';
 
 const Product = () => {
@@ -103,6 +103,7 @@ const Product = () => {
       <ToastContainer
         position="top-left"
         autoClose={2000}
+        transition={Flip}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

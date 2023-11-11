@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/ContactUs";
+import { Flip } from 'react-toastify';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
