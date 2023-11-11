@@ -24,11 +24,11 @@ const Commande = () => {
                         <label className="input-label">Prénom</label>
                     </div>
                     <div className="input3">
-                        <input required type="text" className="input" id="domaine" />
+                        <input required type="number" className="input" id="domaine" />
                         <label className="input-label">Longueur épaule</label>
                     </div>
                     <div className="input4">
-                        <input required type="mail" className="input" id="email" />
+                        <input required type="number" className="input" id="email" />
                         <label className="input-label">Tour de poitrine</label>
                     </div>
                     <div className="input5">

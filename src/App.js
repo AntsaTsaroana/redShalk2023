@@ -16,6 +16,7 @@ import Commande from "./pages/Commande";
 import Login from "./pages/Login";
 import LoginUser from "./pages/LoginUser";
 import DashboardAdmin from "./pages/DashboardAdmin";
+import ModifProduit from "./pages/ModifProduit";
 import Advices from "./pages/Advices";
 import AboutMe from "./pages/AboutMe";
 
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashboardAdmin />,
+      },
+      {
+        path: "/modification",
+        element: <ModifProduit />,
       },
       {
         path: "/advices",
