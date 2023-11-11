@@ -41,9 +41,7 @@ const Header = () => {
                   Accueil
                 </li>
               </Link>
-              <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                Pages
-              </li>
+             
               <Link to ="/advices">
                 <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                   Conseil
@@ -59,6 +57,9 @@ const Header = () => {
                   Commander
                 </li>
               </Link>
+              <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+                Contactez-nous
+              </li>
             </ul>
             <Link to="/cart">
               <div className="relative">

@@ -4,6 +4,10 @@
     margin-bottom: 50px;
 }
 
+.btn {
+    @include button;
+}
+
 .btnGroup {
     display: flex;
     gap: 20px;
@@ -43,7 +47,7 @@
             background: $black;
             color: $white;
             transition: 0.5s;
-    
+
             &:hover {
                 background: $white;
                 color: $black;
