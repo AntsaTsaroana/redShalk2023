@@ -1,0 +1,149 @@
+@import './reset.scss';
+
+.adviceBanner {
+    position: relative;
+    height: calc(100vh - 79px);
+    margin-inline: 3rem;
+    border-bottom: 1px solid $black;
+    // background: tomato;
+    .image {
+        background: $lightGrey;
+        width: 70%;
+        height: 80%;
+        position: absolute;
+        bottom: 3rem;
+        right: 0;
+    }
+    .texts {
+        background: #fff;
+        // border: 1px solid teal;
+        width: 50vw;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        z-index: 2;
+        position: absolute;
+        bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        p {
+            text-transform: uppercase;
+            line-height: 1;
+            font-family: 'Soria';
+            font-size: 2.3rem;
+        }
+        a {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            border: 1px solid $black;
+            padding: .7rem 1rem;
+        }
+    }
+}
+
+.advice {
+    min-height: 100vh;
+    margin-inline: 3rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        .number {
+            background: #fff;
+            padding: .5rem;
+            font-size: 4rem;
+            left: 0;
+            top: 2rem;
+            font-family: 'Soria';
+            letter-spacing: 2px;
+        }
+        .texts {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+    .image {
+        width: 50vw;
+        height: 70vh;
+        background: $lightGrey;
+        position: relative;
+        .number {
+            position: absolute;
+            background: #fff;
+            padding: .5rem;
+            font-size: 4rem;
+            right: 0;
+            top: 2rem;
+            font-family: 'Soria';
+            letter-spacing: 2px;
+            width: fit-content;
+            // font-weight: 600;
+        }
+    }
+    .texts {
+        .title {
+            font-family: 'Soria';
+            font-size: 2rem;
+        }
+        p {
+            margin-block: 2rem;
+            width: 85%;
+        }
+        a {
+            display: block;
+            width: max-content;
+            text-transform: uppercase;
+            font-weight: 500;
+            padding: .7rem 1rem;
+            border: 1px solid $black;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .adviceBanner {
+        .image {
+            width: 90%;
+            height: 100%;
+            // margin: auto;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            background: tomato;
+        }
+        // .texts {
+        //     width: 80vw;
+        // }
+    }
+  }
+@media screen and (max-width: 850px) {
+    .advice {
+        flex-wrap: wrap;
+        justify-content: center; 
+        // align-items: center;
+        margin-block: 4rem;
+        .image {
+            // height: auto;
+            transform-origin: top;
+        }
+        &:nth-child(even) {
+            flex-direction: row;
+            .number {
+                right: 0;
+            }
+            .texts {
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+            }
+        }
+    }
+  }

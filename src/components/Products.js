@@ -4,7 +4,7 @@ import '../assets/scss/products.scss';
 
 const Products = ({ products }) => {
   return (
-    <div className="py-10" style={{ marginTop: '50px' }}>
+    <div className="py-10" >
       <div className="flex flex-col items-center gap-4">
         <span class="heading">
           <h1>PRODUITS</h1>
