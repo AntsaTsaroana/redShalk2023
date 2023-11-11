@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProductsCard from "./ProductsCard";
 import '../assets/scss/products.scss';
 
-const Products = ({ products }) => {
+const Products = ({ products, show }) => {
   return (
     <div className="py-10" >
       <div className="flex flex-col items-center gap-4">
@@ -20,12 +21,12 @@ const Products = ({ products }) => {
       </div>
       {/* =================== Products Start here ================= */}
       <div className="product-container p-25-50 max-w-screen-xl mx-auto grid grid-cols-4 gap-10">
-        {products.slice(0, 3).map((item) => (
+        {products.slice(0, show).map((item) => (
           <ProductsCard key={item._id} product={item} />
         ))}
       </div>
       {/* =================== Products End here =================== */}
-      <button className="button">Voir plus</button>
+      <Link to='/productAll'><button className="button">Voir plus</button></Link>
     </div>
   );
 };

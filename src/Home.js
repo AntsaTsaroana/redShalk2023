@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <Banner />
       <ServicesSection/>
-      <Products products={products} />
+      <Products products={products} show={3}/>
       <Testimonials/>
       <Contact />
     </div>

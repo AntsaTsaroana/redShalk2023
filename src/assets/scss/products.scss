@@ -17,6 +17,13 @@
     margin-bottom: 50px;
 }
 
+.addText {
+    transition: 0.5s;
+    &:hover {
+        font-weight: 600;
+    }
+}
+
 // RESPONSIVE
 @media screen and (max-width:640px) {
     .product-container {

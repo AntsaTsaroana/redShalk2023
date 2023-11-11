@@ -31,6 +31,12 @@
             @include button;
             background: $black;
             color: $white;
+            transition: 0.5s;
+        
+            &:hover {
+                background: $white;
+                color: $black;
+            }
         }
     }
 }
