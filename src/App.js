@@ -16,6 +16,8 @@ import Commande from "./pages/Commande";
 import Login from "./pages/Login";
 import LoginUser from "./pages/LoginUser";
 import DashboardAdmin from "./pages/DashboardAdmin";
+import Advices from "./pages/Advices";
+import AboutMe from "./pages/AboutMe";
 
 const Layout = () => {
   return (
@@ -66,6 +68,14 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashboardAdmin />,
+      },
+      {
+        path: "/advices",
+        element: <Advices />,
+      },
+      {
+        path: "/aboutMe",
+        element: <AboutMe />,
       },
     ],
   },

@@ -30,12 +30,18 @@
             border-radius: 5px;
             transition: .5s ease;
             &:hover {
-                border: 1px solid $darkGrey;
+                border: 1px solid $yellow;
+                .logo {
+                    svg {
+                        color: $yellow;
+                    }
+                }
             }
             .logo {
                 padding: 1rem;
                 svg {
                     margin: auto;
+                    transition: .5s ease;
                 }
             }
             .title {

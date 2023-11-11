@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Title 1",
+        "subtitle": "Collection d'hiver",
+        "image": "/assets/img/work1.webp"
+    },
+    {
+        "title": "Title 2",
+        "subtitle": "Collection d'été",
+        "image": "/assets/img/work1.webp"
+    },
+    {
+        "title": "Title 3",
+        "subtitle": "Collection fete des meres",
+        "image": "/assets/img/work1.webp"
+    }
+]

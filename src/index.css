@@ -17,6 +17,10 @@
     background-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* RESET */
 *,
 ::after,

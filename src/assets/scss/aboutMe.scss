@@ -1,0 +1,109 @@
+@import './reset.scss';
+
+.aboutMeHeroBanner {
+    height: calc(100vh - 79px);
+    position: relative;
+    width: 100%;
+    background: $lightGrey;
+    .texts {
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: 1.5rem;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: 'Soria';
+            font-size: 7rem;
+            line-height: 1;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.descriptions {
+    display: flex;
+    align-items: center;
+    margin-inline: 3rem;
+    gap: 3rem;
+    min-height: 100vh;
+    .left, .right {
+        flex: 1;
+    }
+    .left {
+        h1 {
+            font-family: 'Soria';
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+        .image {
+            width: 100%;
+            background: $lightGrey;
+            height: 20rem;
+        }
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        p {
+            width: 80%;
+            span {
+                font-weight: 500;
+            }
+        }
+        a {
+            padding: .7rem 1.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            border: 1px solid $black;
+            width: fit-content;
+            margin-top: 2rem;
+        }
+    }
+}
+.works {
+    .work {
+        display: flex;
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .desc, .image {
+            flex: 1;
+            height: 100vh;
+        }
+        .desc {
+            background: $lightGrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .title {
+                font-family: 'Soria';
+                font-size: 2rem;
+                letter-spacing: 3px;
+                line-height: 1;
+            }
+        }
+        .image {
+            background: $yellow;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .descriptions {
+        margin-block: 2rem;
+        flex-direction: column;
+        // background: tomato;
+        .left {
+            height: 100vh;
+            width: 100%;
+            display: block;
+        }
+    }
+    // .work {
+    //     flex-direction: column;
+    // }
+  }
