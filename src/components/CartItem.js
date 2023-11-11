@@ -11,7 +11,7 @@ import {
   increamentQuantity,
   resetCart,
 } from "../redux/bazarSlice";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Flip } from "react-toastify";
 import '../assets/scss/products.scss';
 
 const CartItem = () => {
@@ -107,8 +107,9 @@ const CartItem = () => {
         </button>
       </Link>
       <ToastContainer
-        position="top-left"
+        position="bottom-center"
         autoClose={3000}
+        transition={Flip}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

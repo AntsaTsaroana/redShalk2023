@@ -24,69 +24,11 @@ const Header = () => {
 
   
   }, [])
-  
-
-  // // BURGER MENU --------------------
-
-  // const hamburgerBtn = document.querySelector(".toggle-nav");
-
-  // const navigation = document.querySelector(".nav-mobile");
-  // const navigationActive = document.querySelector(".nav-mobile");
-
-  // const linkApparition = document.querySelectorAll(".hideElement a");
-  // const linkDesktop = document.querySelectorAll(".innerNav ul li a");
-
-  // hamburgerBtn.addEventListener("click", toggleNav);
-
-  // function toggleNav() {
-  //   hamburgerBtn.classList.toggle("active");
-  //   navigation.classList.toggle("active");
-
-  //   // Mi-chacher an'ilay scroll rehefa mipoitra ilay nav-mobile
-  //   if (hamburgerBtn.classList.contains("active")) {
-  //     document.documentElement.style.overflow = "hidden";
-
-  //     linkApparition.forEach((element) => {
-  //       element.style.top = "0%";
-  //       element.classList.add = "active";
-  //     });
-  //   } else {
-  //     setTimeout(function () {
-  //       document.documentElement.style.overflow = "auto";
-  //     }, 1000);
-
-  //     linkApparition.forEach((element) => {
-  //       element.style.top = "85%";
-  //       element.classList.remove = "active";
-  //     });
-  //   }
-  // }
-
-  // linkApparition.forEach((element) => {
-  //   element.addEventListener("click", () => {
-  //     hamburgerBtn.classList.toggle("active");
-  //     navigation.classList.toggle("active");
-
-  //     setTimeout(function () {
-  //       document.documentElement.style.overflow = "auto";
-  //     }, 1000);
-  //   });
-  // });
-
-  // linkDesktop.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     linkDesktop.forEach((lien) => {
-  //       lien.classList.remove("active");
-  //     });
-  //     link.classList.add("active");
-  //   });
-  // });
-
 
   return (
     <>
       <div className="navigation w-full h-20 bg-white font-titleFont border-b-[1px] border-b-gray-800 sticky top-0 z-50">
-        <div className="max-w-screen-xl h-full flex items-center justify-between">
+        <div className="max-w-screen-xl h-full flex items-center justify-between ml-auto mr-auto">
           <Link to="/">
             <div>
               <img className="w-28" src={logoDark} alt="logoDark" />

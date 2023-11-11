@@ -1,5 +1,21 @@
 @import './reset.scss';
 
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 50px;
+}
+
+.heading {
+    @include heading;
+}
+
+.button {
+    @include button;
+    left: 46%;
+    margin-bottom: 50px;
+}
 
 // RESPONSIVE
 @media screen and (max-width:640px) {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { useSelector } from "react-redux";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast, Flip } from "react-toastify";
 import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
 import StripeCheckout from "react-stripe-checkout";
@@ -104,8 +104,9 @@ const Cart = () => {
         </div>
       )}
       <ToastContainer
-        position="top-left"
+        position="bottom-center"
         autoClose={2000}
+        transition={Flip}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

@@ -4,6 +4,8 @@ import Banner from "./components/Banner";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
 import ServicesSection from "./components/ServicesSection";
+import Contact from "./components/ContactUs";
+// import { Flip } from 'react-toastify';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -18,6 +20,7 @@ const Home = () => {
       <ServicesSection/>
       <Products products={products} />
       <Testimonials/>
+      <Contact />
     </div>
   );
 };
