@@ -1,17 +1,17 @@
 [
     {
-        "title": "Title 1",
-        "subtitle": "Collection d'hiver",
-        "image": "/assets/img/work1.webp"
+        "id": 1,
+        "title": "Été Éclatant",
+        "subtitle": "Style estival vibrant"
     },
     {
-        "title": "Title 2",
-        "subtitle": "Collection d'été",
-        "image": "/assets/img/work1.webp"
+        "id": 2,
+        "title": "Fleurs Fraîches",
+        "subtitle": "Floraison printanière délicate"
     },
     {
-        "title": "Title 3",
-        "subtitle": "Collection fete des meres",
-        "image": "/assets/img/work1.webp"
+        "id": 3,
+        "title": "Savane Exotique",
+        "subtitle": "Faune et flore inspirantes"
     }
 ]

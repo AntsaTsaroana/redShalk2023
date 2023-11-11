@@ -3,7 +3,7 @@ import '../assets/scss/contactUs.scss';
 
 const ContactUs = () => {
     return (
-        <div className='contactUs'>
+        <div className='contactUs' id='contactUs'>
             <span class="heading">
                 <h1>CONTACTEZ-NOUS</h1>
                 <h2>CONTACTEZ-NOUS</h2>
