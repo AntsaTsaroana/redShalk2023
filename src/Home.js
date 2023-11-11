@@ -4,7 +4,6 @@ import Banner from "./components/Banner";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/ContactUs";
-import { Flip } from 'react-toastify';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -16,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <Products products={products} />
+      <Products products={products} show={3}/>
       <Testimonials/>
       <Contact />
     </div>
