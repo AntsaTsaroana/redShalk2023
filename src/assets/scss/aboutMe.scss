@@ -5,9 +5,9 @@
     position: relative;
     width: 100%;
     background: $lightGrey;
-    // background-image: url(../img/AntsaCreations.jpeg);
-    // background-position: center;
-    // background-size: cover;
+    background-image: url(../img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
     .texts {
         position: absolute;
         transform: translateX(-50%);
@@ -44,6 +44,9 @@
         .image {
             width: 100%;
             background: $lightGrey;
+            background-image: url(../img/banner1.jpg);
+            background-position: center;
+            background-size: cover;
             height: 20rem;
         }
     }
