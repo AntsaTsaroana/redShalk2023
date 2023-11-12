@@ -1,5 +1,7 @@
-import React from 'react'
 import { useState } from 'react';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import '../assets/scss/testimonials.scss'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
 import { MdOutlineStar, MdOutlineStarOutline } from "react-icons/md";
@@ -9,6 +11,9 @@ import Avatar3 from "../assets/img/avatar3.jpg"
 import testimonials from "../data/testimonials.json"
 
 const Testimonials = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
 
     const [userId, setUserId] = useState(1)
 
@@ -23,7 +28,7 @@ const Testimonials = () => {
         </div>
         <div className="right">
             <div className="title">
-                <h2>Témoignages</h2>
+                <h2 data-aos="fade-right">Témoignages</h2>
                 <span>Témoignages</span>
             </div>
             <p className="subtitle">Leurs mots comptent pour nous.</p>

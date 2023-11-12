@@ -86,6 +86,23 @@ const Header = () => {
                 </span>
               </div>
             </Link>
+            {/* <Link to="/login">
+              <img
+                className="w-8 h-8 rounded-full"
+                src={
+                  userInfo
+                    ? userInfo.image
+                    : "https://images.pexels.com/photos/2414036/pexels-photo-2414036.jpeg"
+                }
+                alt="userLogo"
+              />
+            </Link>
+
+            {userInfo && (
+              <p className="text-base font-titleFont font-semibold underline underline-offset-2">
+                {userInfo.name}
+              </p>
+            )} */}
 
             {/* burger Menu */}
             <span ref={toggleNav} className="toggle-nav">
@@ -122,24 +139,6 @@ const Header = () => {
                 <Link to='/'><a href="#partenaires" className="active" style={{ '--i': '0.7s' }}>Contactez-nous</a></Link>
               </span>
             </div>
-
-            {/* <Link to="/login">
-            <img
-              className="w-8 h-8 rounded-full"
-              src={
-                userInfo
-                  ? userInfo.image
-                  : "https://images.pexels.com/photos/2414036/pexels-photo-2414036.jpeg"
-              }
-              alt="userLogo"
-            />
-          </Link>
-
-          {userInfo && (
-            <p className="text-base font-titleFont font-semibold underline underline-offset-2">
-              {userInfo.name}
-            </p>
-          )} */}
           </div>
         </div>
       </div>
