@@ -8,6 +8,11 @@ $lightGrey: hsl(0, 0%, 80%);
 $maxWidth: min(100%, 1366px);
 $fontH2: clamp(1.5rem, 1.2113rem + 0.9238vw, 2rem);
 
+.hidden {
+    position: relative;
+    width: max-content;
+}
+
 // RESPONSIVE BREAKPOINT :
 // sm	640px	@media (min-width: 640px) { ... }
 // md	768px	@media (min-width: 768px) { ... }

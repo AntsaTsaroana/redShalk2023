@@ -27,10 +27,10 @@ const Footer = () => {
         <div className="location">
           <h2 className="text-2xl font-semibold text-white mb-4">locate us</h2>
           <div className="text-base flex flex-col gap-2">
-            <p>Tana, Ambaranja</p>
-            <p>Mobile: 00968 97859628</p>
-            <p>Phone: 00968 24769821</p>
-            <p>e-mail: redShalk@gmail.com</p>
+            <p>Tana, Ambohidroa</p>
+            <p>Mobile: +261 34 45 883 12</p>
+            <p>Phone: +261 32 18 344 51</p>
+            <p>e-mail: <a href="mailto:sarobidyantsatina@gmail.com">sarobidyantsatina@gmail.com</a></p>
           </div>
         </div>
         <div className="location" style={{marginBottom: '25px'}}>

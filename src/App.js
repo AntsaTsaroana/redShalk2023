@@ -6,8 +6,9 @@ import {
   ScrollRestoration,
 } from "react-router-dom";
 import { productsData } from "./api/Api";
-import Footer from "./components/Footer";
+import Preloader from "./components/Preloader";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Product from "./components/Product";
 import AllProduits from "./pages/AllProduits";
 import Home from "./Home";
@@ -24,14 +25,6 @@ import axios from "axios";
 
 axios.defaults.withCredentials = true;
 
-// Composant Loader
-const Preloader = () => {
-  return (
-    <div className="preloader">
-      CHARGEMENT ......
-    </div>
-  );
-};
 
 const Layout = () => {
   return (
@@ -111,7 +104,7 @@ function App() {
     // Simule le chargement
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
 
   }, []);
 

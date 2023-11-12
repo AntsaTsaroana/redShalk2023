@@ -12,7 +12,7 @@ const ServicesSection = () => {
                 <h1>NOS SERVICES</h1>
                 <h2>NOS SERVICES</h2>
             </span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est voluptatibus distinctio id esse quis Lorem ipsum dolor sit amet.</p>
+            <p>Explorez nos services de stylisme sur mesure, conçus pour vous aider à exprimer votre style personnel et à briller dans toutes les occasions. Découvrez comment nous pouvons vous aider.</p>
         </div>
         <div className="services flex items-start text-center">
             { services.map((service) => (

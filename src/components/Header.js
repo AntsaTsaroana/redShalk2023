@@ -14,7 +14,7 @@ const Header = () => {
   const navMobile = useRef(null);
 
   useEffect(() => {
-    
+
     const toggle = toggleNav.current;
     const navigation = navMobile.current;
 
@@ -22,7 +22,7 @@ const Header = () => {
       navigation.classList.toggle("active");
     })
 
-  
+
   }, [])
 
   return (
@@ -41,8 +41,8 @@ const Header = () => {
                   Accueil
                 </li>
               </Link>
-             
-              <Link to ="/advices">
+
+              <Link to="/advices">
                 <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                   Conseil
                 </li>
@@ -60,6 +60,23 @@ const Header = () => {
               <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                 Contactez-nous
               </li>
+
+              {/* ADMIN NAVIGATION */}
+              {/* <Link to ="/">
+                <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+                  Produit
+                </li>
+              </Link>
+              <Link to ="/">
+                <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+                  Commande
+                </li>
+              </Link>
+              <Link to ="/">
+                <li className="text-base text-black font-bold hover:text-orange-900 hover:underline underline-offset-2 decoration-[1px] cursor-pointer duration-300">
+                  Déconnexion
+                </li>
+              </Link> */}
             </ul>
             <Link to="/cart">
               <div className="relative">
@@ -90,16 +107,19 @@ const Header = () => {
             {/* Nav Mobile */}
             <div ref={navMobile} className="nav-mobile">
               <span className="hideElement">
-                <a href="#header" className="active" style={{ '--i': '0.5s' }}>Accueil</a>
+                <Link to='/'><a href="#header" className="active" style={{ '--i': '0.5s' }}>Accueil</a></Link>
               </span>
               <span className="hideElement">
-                <a href="#problems" className="active" style={{ '--i': '0.6s' }}>lorem</a>
+                <Link to='/advices'><a href="#problems" className="active" style={{ '--i': '0.6s' }}>Conseil</a></Link>
               </span>
               <span className="hideElement">
-                <a href="#solutions" className="active" style={{ '--i': '0.6s' }}>lorem</a>
+                <Link to='/aboutMe'><a href="#solutions" className="active" style={{ '--i': '0.6s' }}>A-propos</a></Link>
               </span>
               <span className="hideElement">
-                <a href="#partenaires" className="active" style={{ '--i': '0.7s' }}>lorem</a>
+                <Link to='/commande'><a href="#partenaires" className="active" style={{ '--i': '0.7s' }}>Commander</a></Link>
+              </span>
+              <span className="hideElement">
+                <Link to='/'><a href="#partenaires" className="active" style={{ '--i': '0.7s' }}>Contactez-nous</a></Link>
               </span>
             </div>
 
@@ -109,7 +129,7 @@ const Header = () => {
               src={
                 userInfo
                   ? userInfo.image
-                  : "https://images.pexels.com/photos/264547/pexels-photo-264547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  : "https://images.pexels.com/photos/2414036/pexels-photo-2414036.jpeg"
               }
               alt="userLogo"
             />
