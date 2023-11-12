@@ -1,10 +1,15 @@
-import React from 'react';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import '../assets/scss/contactUs.scss';
 
 const ContactUs = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
     return (
         <div className='contactUs' id='contactUs'>
-            <span class="heading">
+            <span class="heading" data-aos="fade-up">
                 <h1>CONTACTEZ-NOUS</h1>
                 <h2>CONTACTEZ-NOUS</h2>
             </span>

@@ -1,13 +1,20 @@
-import React from 'react'
+
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { AiOutlineArrowRight } from "react-icons/ai"
 import '../assets/scss/advice.scss'
 
 const AdviceBanner = () => {
+  useEffect(() => {
+      Aos.init();
+  }, []);
+
   return (
     <div className='adviceBanner'>
         <div className="image"></div>
         <div className="texts">
-            <p>Mettez en valeur votre personnalité grâce à nos suggestions de mode.</p>
+            <p data-aos="fade-left">Mettez en valeur votre personnalité grâce à nos suggestions de mode.</p>
             <a href="#01">
               Commencer
                 <AiOutlineArrowRight/>

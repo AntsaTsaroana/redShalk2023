@@ -1,4 +1,6 @@
-import React from 'react'
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import '../assets/scss/advice.scss'
 import image1 from '../assets/img/models/02.webp'
 import image2 from '../assets/img/models/03.webp'
@@ -8,6 +10,9 @@ import image5 from '../assets/img/models/06.webp'
 import image6 from '../assets/img/models/07.webp'
 
 const Advice = (props) => {
+  useEffect(() => {
+      Aos.init();
+  }, []);
 
     const no = props.no
     const type = props.type
@@ -21,11 +26,11 @@ const Advice = (props) => {
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }} >
-            <h1 className="number">{type}</h1>
+            <h1 className="number" data-aos="fade-down">{type}</h1>
         </div>
         <div className="texts">
-            <h1 className="title">{title}</h1>
-            <p>{description}</p>
+            <h1 className="title" data-aos="fade-up">{title}</h1>
+            <p data-aos="fade-up">{description}</p>
             <a href={no === '01' ? '#02' : no === '02' ? '#03' : no === '03' ? '#04' : no === '04' ? '#05' : no === '05' ? '#06' : '#01' }>Morphologie suivant</a>
         </div>
     </div>
