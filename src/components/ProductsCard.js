@@ -4,6 +4,9 @@ import { BsCart3 } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/bazarSlice";
 import { ToastContainer, toast, Flip } from "react-toastify";
+import image1 from '../assets/img/collection1.jpg'
+import image2 from '../assets/img/collection2.jpg'
+import image3 from '../assets/img/collection3.jpg'
 
 const ProductsCard = ({ product }) => {
   const dispatch = useDispatch();
@@ -28,7 +31,7 @@ const ProductsCard = ({ product }) => {
       >
         <img
           className="w-full h-full object-cover group-hover:scale-110 duration-500"
-          src={product.image}
+          src={image1}
           alt="productImg"
         />
       </div>

@@ -21,7 +21,7 @@ const AllCommande = () => {
                         <li><b>Longueur jupe :</b> 33 cm </li>
                         <li><b>Email :</b> amdo@gmail.com </li>
                         <li><b>Numero téléphone :</b> 033 23 546 78 </li>
-                        <button className='btn'>Facture</button>
+                        <a href="../assets/facture.pdf" download><button className='btn'>Facture</button></a>
                     </ul>
                     <ul style={{ textAlign: 'left', margin: '15px auto', width: 'max-content' }}>
                         <li><b>Nom :</b> RAHAJARIZAFY </li>
@@ -36,7 +36,7 @@ const AllCommande = () => {
                         <li><b>Longueur jupe :</b> 33 cm </li>
                         <li><b>Email :</b> amdo@gmail.com </li>
                         <li><b>Numero téléphone :</b> 033 23 546 78 </li>
-                        <button className='btn'>Facture</button>
+                        <a href="../assets/facture.pdf" download><button className='btn'>Facture</button></a>
                     </ul>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ProductsCard from "./ProductsCard";
 import '../assets/scss/products.scss';
+// import fake from '../data/fake.json'
 
 const Products = ({ products, show }) => {
   return (
@@ -21,6 +22,7 @@ const Products = ({ products, show }) => {
         {products.slice(0, show).map((item) => (
           <ProductsCard key={item._id} product={item} />
         ))}
+        {/* {fake.map(() => {})} */}
       </div>
       {/* =================== Products End here =================== */}
       <Link to='/productAll'><button className="button">Voir plus</button></Link>
