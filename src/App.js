@@ -20,6 +20,9 @@ import ModifProduit from "./pages/ModifProduit";
 import AllCommande from "./pages/AllCommande";
 import Advices from "./pages/Advices";
 import AboutMe from "./pages/AboutMe";
+import axios from "axios";
+
+axios.defaults.withCredentials = true;
 
 // Composant Loader
 const Preloader = () => {
