@@ -27,7 +27,7 @@ const Product = () => {
           <div className="absolute top-4 right-0">
             {details.isNew && (
               <p className="bg-black text-white font-semibold font-titleFont px-8 py-1">
-                Sale
+                Nouveau
               </p>
             )}
           </div>
@@ -36,11 +36,8 @@ const Product = () => {
           <div>
             <h2 className="text-4xl font-semibold">{details.title}</h2>
             <div className="flex items-center gap-4 mt-3">
-              <p className="line-through font-base text-gray-500">
-                ${details.oldPrice}
-              </p>
               <p className="text-2xl font-medium text-gray-900">
-                ${details.price}
+                {details.price} Ar
               </p>
             </div>
           </div>
@@ -52,7 +49,7 @@ const Product = () => {
               <MdOutlineStar />
               <MdOutlineStar />
             </div>
-            <p className="text-xs text-gray-500">(1 Customer review)</p>
+            <p className="text-xs text-gray-500">(Avis personnel)</p>
           </div>
           <p className="text-base text-gray-500 -mt-3">{details.description}</p>
           <div className="divPanier flex gap-4">
@@ -95,7 +92,7 @@ const Product = () => {
             </button>
           </div>
           <p className="text-base text-gray-500">
-            Category:{" "}
+            Categorie:{" "}
             <span className="font-medium capitalize">{details.category}</span>
           </p>
         </div>

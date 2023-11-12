@@ -7,6 +7,7 @@ import CartItem from "../components/CartItem";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 import '../assets/scss/products.scss';
+import halfBanner from '../assets/img/coupe.webp'
 
 const Cart = () => {
   const productData = useSelector((state) => state.bazar.productData);
@@ -40,7 +41,7 @@ const Cart = () => {
     <div>
       <img
         className="w-full h-60 object-cover"
-        src="https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        src={halfBanner}
         alt="cartImg"
       />
       {productData.length > 0 ? (
@@ -48,29 +49,22 @@ const Cart = () => {
           <CartItem />
           <div className="item w-1/3 bg-[#fafafa] py-6 px-4 mt-6">
             <div className="flex flex-col gap-6 border-b-[1px] border-b-gray-400 pb-6">
-              <h2 className="text-2xl font-medium text-center sm:text-left">cart totals</h2>
+              <h2 className="text-2xl font-medium text-center sm:text-left">Total Panier</h2>
               <p className="flex items-center gap-4 text-base">
-                Subtotal{" "}
+                Sous total{" "}
                 <span className="font-titleFont font-bold text-lg">
-                  ${totalAmt}
-                </span>
-              </p>
-              <p className="flex items-start gap-4 text-base">
-                Shipping{" "}
-                <span>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quos, veritatis.
+                  {totalAmt} Ar
                 </span>
               </p>
             </div>
             <p className="font-titleFont font-semibold flex justify-between mt-6">
-              Total <span className="text-xl font-bold">${totalAmt}</span>
+              Total <span className="text-xl font-bold">{totalAmt} Ar</span>
             </p>
             <button
               onClick={handleCheckout}
               className="text-base bg-black text-white w-full py-3 mt-6 hover:bg-gray-800 duration-300"
             >
-              proceed to checkout
+              Proceder au payement
             </button>
             {payNow && (
               <div className="w-full mt-6 flex items-center justify-center">
@@ -90,15 +84,14 @@ const Cart = () => {
       ) : (
         <div className="max-w-screen-xl mx-auto py-10 flex flex-col items-center gap-2 justify-center">
           <p className="text-xl text-orange-600 font-titleFont font-semibold">
-            Your Cart is Empty. Please go back to Shopping and add products to
-            Cart.
+          Votre panier est vide. Veuillez retourner aux achats et ajouter des produits au panier.
           </p>
-          <Link to="/">
+          <Link to="/productAll">
             <button className="flex items-center gap-1 text-gray-400 hover:text-black duration-300">
               <span>
                 <HiOutlineArrowLeft />
               </span>
-              go shopping
+              Retour
             </button>
           </Link>
         </div>

@@ -42,7 +42,7 @@ const ProductsCard = ({ product }) => {
           <div className="text-sm relative flex justify-end overflow-hidden">
             <div className="flex gap-2">
               {/* <p className="line-through text-gray-500">${product.oldPrice}</p> */}
-              <p className="font-semibold">${product.price}</p>
+              <p className="font-semibold">{product.price} Ar</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 import Products from '../components/Products';
+import halfBanner from '../assets/img/coupe.webp'
 
 const AllProduits = () => {
     const [products, setProducts] = useState([]);
@@ -13,7 +14,7 @@ const AllProduits = () => {
         <div>
             <img
                 className="w-full h-60 object-cover"
-                src="https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={halfBanner}
                 alt="cartImg"
             />
             <Products products={products} show={9} />

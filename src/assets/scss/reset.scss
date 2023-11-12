@@ -10,7 +10,8 @@ $fontH2: clamp(1.5rem, 1.2113rem + 0.9238vw, 2rem);
 
 .hidden {
     position: relative;
-    width: max-content;
+    display: block;
+    overflow: hidden;
 }
 
 // RESPONSIVE BREAKPOINT :

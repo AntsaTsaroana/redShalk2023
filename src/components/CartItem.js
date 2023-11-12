@@ -20,7 +20,7 @@ const CartItem = () => {
   return (
     <div className="item w-2/3 pr-10">
       <div className="w-full">
-        <h2 className="font-titleFont text-2xl text-center sm:text-left">shopping cart</h2>
+        <h2 className="font-titleFont text-2xl text-center sm:text-left">Panier</h2>
         <div className="itemChild">
           <div>
             {productData.map((item) => (
@@ -43,9 +43,9 @@ const CartItem = () => {
                   />
                 </div>
                 <h2 className="w-52">{item.title}</h2>
-                <p className="w-10">${item.price}</p>
+                <p className="w-10">{item.price}Ar</p>
                 <div className="w-52 flex items-center justify-between text-gray-500 gap-4 border p-3">
-                  <p className="text-sm">Quantity</p>
+                  <p className="text-sm">Quantité</p>
                   <div className="flex items-center gap-4 text-sm font-semibold">
                     <span
                       onClick={() =>
@@ -84,7 +84,7 @@ const CartItem = () => {
                     </span>
                   </div>
                 </div>
-                <p className="w-14">${item.quantity * item.price}</p>
+                <p className="w-14">{item.quantity * item.price} Ar</p>
               </div>
             ))}
           </div>
@@ -94,11 +94,11 @@ const CartItem = () => {
             }
             className="bg-red-500 text-white mt-8 ml-7 py-1 px-6 hover:bg-red-800 duration-300"
           >
-            Reset Cart
+            Reinitialiser le panier
           </button>
         </div>
       </div>
-      <Link to="/">
+      <Link to="/productAll">
         <button className="mt-8 ml-7 flex items-center gap-1 text-gray-400 hover:text-black duration-300">
           <span>
             <HiOutlineArrowLeft />
