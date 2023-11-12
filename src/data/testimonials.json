@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "username": "Miora Trendy",
+        "testimonial": "Le styliste a su capter ma personnalité et la traduire en vêtements exceptionnels. Chaque création est une œuvre d'art. Je me sens magnifique à chaque fois que je porte ses créations."
+    },
+    {
+        "id": 2,
+        "username": "Vohary Chic",
+        "testimonial": "Je ne trouve pas les mots pour exprimer à quel point je suis satisfait du service du styliste. Chaque tenue est une révélation de mon style et de ma personnalité."
+    },
+    {
+        "id": 3,
+        "username": "Tahina Charme",
+        "testimonial": "Travailler avec ce styliste a été une expérience exceptionnelle. Chaque vêtement est une pièce unique qui raconte mon histoire. Je ne pourrais pas être plus heureux de ma garde-robe."
+    }
+]
