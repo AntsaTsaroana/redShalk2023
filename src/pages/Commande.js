@@ -1,12 +1,13 @@
 import React from 'react';
 import '../assets/scss/commande.scss'
+import halfBanner from '../assets/img/coupe.webp'
 
 const Commande = () => {
     return (
         <div>
             <img
                 className="w-full h-60 object-cover"
-                src="https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={halfBanner}
                 alt="cartImg"
             />
             <span className="heading">

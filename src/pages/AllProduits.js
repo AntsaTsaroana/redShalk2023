@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import Products from '../components/Products';
 import halfBanner from '../assets/img/coupe.webp'
 
