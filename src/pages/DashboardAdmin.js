@@ -58,13 +58,13 @@ const DashboardAdmin = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
-                                    <td>...</td>
+                                    <td>Andriantsoa</td>
+                                    <td>Ensemble Gris</td>
+                                    <td>Ensemble</td>
+                                    <td>150.000 ar</td>
+                                    <td>Disponible</td>
                                     <td>
-                                        <Link to="/bien-modif" className='update'>Modifier</Link>
+                                        <Link to="/modification" className='update'>Modifier</Link>
                                         <Link to="#" className='delete'>Supprimer</Link>
                                     </td>
                                 </tr>

@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: $white;
         h1 {
             font-family: 'Soria';
             font-size: 7rem;
@@ -80,7 +81,7 @@
             height: 100vh;
         }
         .desc {
-            background: $lightGrey;
+            background: $lightGrey2;
             display: flex;
             justify-content: center;
             align-items: center;

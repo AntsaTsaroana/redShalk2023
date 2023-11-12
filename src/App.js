@@ -101,7 +101,7 @@ function App() {
     // Simule le chargement
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 0);
 
   }, []);
 
