@@ -7,7 +7,6 @@
 
     .left {
         .avatar {
-            // bac
             width: 15rem;
             aspect-ratio: 1;
             border-radius: 50%;
@@ -50,6 +49,21 @@
                 .username {
                     font-weight: bolder;
                     text-transform: uppercase;
+                }
+            }
+        }
+        .arrows {
+            button {
+                // background: red;
+                cursor: not-allowed;
+                svg {
+                    color: $lightGrey;
+                }
+            }
+            button.active {
+                cursor: pointer;
+                svg {
+                    color: $black;
                 }
             }
         }
